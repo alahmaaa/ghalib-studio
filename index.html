@@ -124,10 +124,8 @@ h1{
 
 .hero-cat{position:relative; z-index:4; justify-self:center; width:clamp(240px, 30vw, 390px); animation:rise 1.1s ease .5s both}
 .hero-cat svg{width:100%; overflow:visible}
-.cat-eye{animation:eyePulse 3.5s ease-in-out infinite}
-@keyframes eyePulse{0%,100%{opacity:1}50%{opacity:.55}}
-.cat-gaze{transform-box:fill-box; transform-origin:center; animation:gaze 3.5s ease-out infinite}
-@keyframes gaze{0%{opacity:.5; transform:scale(.5)}70%,100%{opacity:0; transform:scale(1.9)}}
+.cat-eye{animation:eyeTwinkle 4s ease-in-out infinite}
+@keyframes eyeTwinkle{0%,100%{opacity:1}50%{opacity:.7}}
 .cat-star{animation:twinkle 3.8s ease-in-out infinite}
 .cat-star.s2{animation-delay:1.3s}
 .cat-star.s3{animation-delay:2.1s}
@@ -264,8 +262,7 @@ footer p{color:var(--sand-dim); font-size:13.5px}
         <path d="M36 126 L104 126"/>
         <path d="M44 122 C 22 116 16 98 30 92 C 41 88 44 100 35 103"/>
       </g>
-      <circle class="cat-gaze" cx="106" cy="42" r="5" fill="none" stroke="#C75B2A" stroke-width="1.2"/>
-      <circle class="cat-eye" cx="106" cy="42" r="2.4" fill="#C75B2A"/>
+      <path class="cat-eye" d="M106 38.5 l1 2.5 2.5 1 -2.5 1 -1 2.5 -1 -2.5 -2.5 -1 2.5 -1 Z" fill="#C9A86A"/>
       <path class="cat-star" d="M126 18 l1.9 4.8 4.8 1.9 -4.8 1.9 -1.9 4.8 -1.9 -4.8 -4.8 -1.9 4.8 -1.9 Z" fill="#C9A86A"/>
       <path class="cat-star s2" d="M139 38 l1.2 3 3 1.2 -3 1.2 -1.2 3 -1.2 -3 -3 -1.2 3 -1.2 Z" fill="#C9A86A"/>
       <path class="cat-star s3" d="M118 5 l1.1 2.8 2.8 1.1 -2.8 1.1 -1.1 2.8 -1.1 -2.8 -2.8 -1.1 2.8 -1.1 Z" fill="#C9A86A"/>
